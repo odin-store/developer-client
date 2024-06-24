@@ -15,7 +15,7 @@ import {
 
 export default function MainPage() {
   return (
-    <main className="w-full h-[100vh] flex justify-center items-center flex-col">
+    <main className="w-full h-[calc(100vh-25px)] flex justify-center items-center flex-col">
       <div className="flex flex-col items-center justify-center">
         <Badge variant={"secondary"} className="mb-1">
           Project Odin

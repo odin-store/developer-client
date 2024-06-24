@@ -6,8 +6,8 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "odin-developer-client",
-    "version": "0.0.0"
+    "productName": "Odin Developer Client",
+    "version": "1.0.0"
   },
   "tauri": {
     "allowlist": {
@@ -15,13 +15,61 @@
       "shell": {
         "all": false,
         "open": true
+      },
+      "window": {
+        "all": true,
+        "close": true,
+        "hide": true,
+        "show": true,
+        "maximize": true,
+        "minimize": true,
+        "unmaximize": true,
+        "unminimize": true,
+        "startDragging": true
+      },
+      "http": {
+        "all": true,
+        "request": true
+      },
+      "dialog": {
+        "all": true,
+        "ask": true,
+        "confirm": true,
+        "message": true,
+        "open": true,
+        "save": true
+      },
+      "path": {
+        "all": true
+      },
+      "fs": {
+        "all": true,
+        "readFile": true,
+        "writeFile": true,
+        "readDir": true,
+        "copyFile": true,
+        "createDir": true,
+        "removeDir": true,
+        "removeFile": true,
+        "renameFile": true,
+        "exists": true
+      },
+      "os": {
+        "all": true
       }
     },
     "windows": [
       {
-        "title": "odin-developer-client",
-        "width": 800,
-        "height": 600
+        "fullscreen": false,
+        "resizable": true,
+        "title": "Odin Developers",
+        "decorations": false,
+        "width": 1200,
+        "height": 700,
+        "label": "main",
+        "url": "/",
+        "minWidth": 745,
+        "minHeight": 400
       }
     ],
     "security": {
@@ -29,8 +77,9 @@
     },
     "bundle": {
       "active": true,
+      "publisher": "damie labs",
       "targets": "all",
-      "identifier": "com.tauri.dev",
+      "identifier": "shop.odinus.developers",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
